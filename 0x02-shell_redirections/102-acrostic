@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -d' ' -f1 acrostic
+{line:0:1}
