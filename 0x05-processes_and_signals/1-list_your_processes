@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This script displays a list of currently running processes
-
-ps auxf
+# Displays a list of currently running processes for all users
+# in a user-oriented format according to their process hierarchy
+ps -faux
