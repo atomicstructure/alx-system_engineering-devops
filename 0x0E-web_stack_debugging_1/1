@@ -1,0 +1,1 @@
+./0-nginx_likes_port_80: line 3: /etc/nginx/sites-enabled/default: Permission denied
