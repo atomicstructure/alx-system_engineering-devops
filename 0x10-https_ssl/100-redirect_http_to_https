@@ -35,8 +35,8 @@ defaults
 
 frontend My_frontend
 	bind *:80
-	bind *:443 ssl crt /etc/haproxy/certs/www.samchris.tech/fullchain.pem
-	http-request redirect scheme https code 301 if { hdr(Host) -i www.uniqueel.tech } !{ ssl_fc }
+	bind *:443 ssl crt /etc/haproxy/certs/lb-01.samchris.tech/fullchain.pem
+	http-request redirect scheme https code 301 if { hdr(Host) -i lb-01.samchris.tech } !{ ssl_fc }
 	default_backend myservers
 
 backend My_webservers

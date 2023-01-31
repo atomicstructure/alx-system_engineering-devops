@@ -36,7 +36,7 @@ defaults
 frontend My_server
         bind *:80
         bind *:443 ssl crt /etc/letsencrypt/live/lb-01.samchris.tech/fullchain.pem
-        redirect scheme https if !{ ssl_fc }
+        http-request redirect scheme https code 301 if { hdr(Host) -i lb-01.samchris.tech } !{ ssl_fc }
         mode http
         default_backend web_server
 listen web_server
