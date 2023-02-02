@@ -2,4 +2,3 @@
 Host *
       PasswordAuthentication no
       IdentifyFile ~/.ssh/school
-	add_header X-Served-By 'Web-01';
