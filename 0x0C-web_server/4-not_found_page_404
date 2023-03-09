@@ -2,11 +2,11 @@
 # sets up a new 404 error page
 sudo apt-get update
 sudo apt-get install -y nginx 
-echo "Hello World!" > index.html
+echo "Hello World! This is server 1" > index.html
 sudo mv index.html /var/www/html
 
 
-echo "Ceci n'est pas une page" > 404.html
+echo "Page Unavailable" > 404.html
 sudo mv 404.html /var/www/html
 echo "server {
    listen 80 default_server;
